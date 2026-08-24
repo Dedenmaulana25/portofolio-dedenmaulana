@@ -1748,6 +1748,14 @@ strong { color: var(--clr-white); font-weight: var(--fw-semi); }
   flex: 1;
 }
 
+.cert-card__year {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  color: var(--clr-purple);
+  letter-spacing: .06em;
+  margin-bottom: var(--sp-2);
+}
+
 
 /* ─── CERTIFICATE MODAL ─────────────────────────────────────── */
 .cert-modal {

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio pribadi Deden Maulana Iskandar — Fresh Graduate bidang Multimedia dan Teknologi. Web Development, UI/UX Design, IT Support." />
+    <meta name="author" content="Deden Maulana Iskandar" />
+    <meta property="og:title" content="Deden Maulana Iskandar | Portfolio" />
+    <meta property="og:description" content="Fresh Graduate Multimedia & Teknologi — Web Dev, UI/UX, IT Support" />
+    <title>Deden Maulana Iskandar | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+
+        <a href="#home" class="navbar__logo" aria-label="Deden Maulana — kembali ke atas">
+          Deden<span class="accent">.</span>
+        </a>
+
+        <nav class="navbar__menu" id="navMenu" aria-label="Navigasi utama">
+          <ul class="navbar__list">
+            <li><a href="#home"         class="navbar__link">Home</a></li>
+            <li><a href="#about"        class="navbar__link">About</a></li>
+            <li><a href="#skills"       class="navbar__link">Skills</a></li>
+            <li><a href="#projects"     class="navbar__link">Projects</a></li>
+            <li><a href="#experience"   class="navbar__link">Experience</a></li>
+            <li><a href="#certificates" class="navbar__link">Certificates</a></li>
+            <li><a href="#contact"      class="navbar__link contact-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="navbar__toggle"
+          id="navToggle"
+          aria-label="Buka/tutup menu navigasi"
+          aria-expanded="false"
+          aria-controls="navMenu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+      </div>
+    </header>
+
+    <main id="main-content">
+
+      <!-- =====================================================
+           HERO
+      ====================================================== -->
+      <section class="section hero" id="home" aria-label="Pengantar">
+        <div class="container hero__inner">
+
+          <div class="hero__text" data-animate="fade-up">
+            <p class="hero__greeting">Hi, I'm Deden Maulana 👋</p>
+            <h1 class="hero__name">Deden Maulana<br /><span class="accent">Iskandar</span></h1>
+            <h2 class="hero__title">Fresh Graduate &amp; <span class="accent">Tech Enthusiast</span></h2>
+            <p class="hero__desc">
+              Saya memiliki minat di bidang teknologi, khususnya Web Development, UI/UX Design,
+              dan IT Support. Saya senang mempelajari hal baru dan mengembangkan solusi digital
+              yang bermanfaat.
+            </p>
+            <div class="hero__cta">
+              <a href="#projects" class="btn btn--primary">View My Projects</a>
+              <a href="#contact"  class="btn btn--outline">Contact Me</a>
+            </div>
+            <div class="hero__socials">
+              <a href="#contact" class="hero__social-link" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </a>
+              <a href="#contact" class="hero__social-link" aria-label="LinkedIn" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+              <a href="#contact" class="hero__social-link" aria-label="GitHub" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__image" data-animate="fade-left">
+            <div class="hero__avatar" role="img" aria-label="Foto profil Deden Maulana Iskandar">
+              <div class="hero__avatar-ring"></div>
+              <div class="hero__avatar-inner">
+                <img
+                  src="assets/images/foto-deden.jpg"
+                  alt="Foto profil Deden Maulana Iskandar"
+                  width="320"
+                  height="320"
+                />
+              </div>
+            </div>
+            <div class="hero__badge hero__badge--1" aria-hidden="true">
+              <span class="hero__badge-icon">💻</span>
+              <span>Web Dev</span>
+            </div>
+            <div class="hero__badge hero__badge--2" aria-hidden="true">
+              <span class="hero__badge-icon">🎨</span>
+              <span>UI/UX</span>
+            </div>
+            <div class="hero__badge hero__badge--3" aria-hidden="true">
+              <span class="hero__badge-icon">🛠️</span>
+              <span>IT Support</span>
+            </div>
+              <div class="hero__badge hero__badge--4" aria-hidden="true">
+              <span class="hero__badge-icon">🌐</span>
+              <span>Net Engineer</span>
+            </div>
+          </div>
+
+        </div>
+
+        <a href="#about" class="hero__scroll-hint" aria-label="Scroll ke bawah">
+          <span class="hero__scroll-dot"></span>
+        </a>
+      </section>
+
+      <!-- =====================================================
+           ABOUT
+      ====================================================== -->
+      <section class="section section--alt" id="about" aria-label="Tentang saya">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">Get to know me</p>
+            <h2 class="section__title">About <span class="accent">Me</span></h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__text" data-animate="fade-right">
+              <p>
+                Halo! Saya <strong>Deden Maulana Iskandar</strong>, seorang fresh graduate dengan
+                latar belakang <strong>Multimedia dan Teknologi</strong>. Saya memiliki ketertarikan
+                yang kuat terhadap dunia digital, mulai dari membangun website, merancang antarmuka
+                yang nyaman digunakan, hingga memastikan sistem teknologi berjalan dengan baik.
+              </p>
+              <p>
+                Selama menempuh pendidikan, saya aktif mengerjakan berbagai proyek teknologi
+                dan terlibat dalam kegiatan organisasi yang melatih kemampuan kepemimpinan,
+                komunikasi, dan kerja tim. Saya percaya bahwa belajar tidak berhenti di bangku
+                kuliah — setiap tantangan baru adalah kesempatan untuk bertumbuh.
+              </p>
+              <p>
+                Saat ini saya sedang aktif mencari peluang untuk berkontribusi di industri
+                teknologi sebagai <strong>Web Developer</strong>, <strong>UI/UX Designer</strong>,
+                atau <strong>IT Support</strong>. Saya siap belajar cepat dan beradaptasi
+                dengan lingkungan kerja yang dinamis.
+              </p>
+              <div class="about__traits">
+                <span class="trait-tag">Fast Learner</span>
+                <span class="trait-tag">Team Player</span>
+                <span class="trait-tag">Detail Oriented</span>
+                <span class="trait-tag">Problem Solver</span>
+                <span class="trait-tag">Adaptable</span>
+                <span class="trait-tag">Responsible</span>
+              </div>
+            </div>
+
+            <div class="about__stats" data-animate="fade-left">
+              <div class="stat-card">
+                <div class="stat-card__icon" aria-hidden="true">🎓</div>
+                <div class="stat-card__body">
+                  <p class="stat-card__value">Fresh</p>
+                  <p class="stat-card__label">Graduate</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon" aria-hidden="true">🗂️</div>
+                <div class="stat-card__body">
+                  <p class="stat-card__value">2+</p>
+                  <p class="stat-card__label">Projects</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon" aria-hidden="true">🚀</div>
+                <div class="stat-card__body">
+                  <p class="stat-card__value">Tech</p>
+                  <p class="stat-card__label">Enthusiast</p>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-card__icon" aria-hidden="true">🌐</div>
+                <div class="stat-card__body">
+                  <p class="stat-card__value">3</p>
+                  <p class="stat-card__label">Fields of Interest</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           SKILLS
+      ====================================================== -->
+      <section class="section" id="skills" aria-label="Keahlian">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">What I can do</p>
+            <h2 class="section__title">My <span class="accent">Skills</span></h2>
+          </div>
+
+          <div class="skills__groups">
+
+            <!-- Web Development -->
+            <div class="skill-group" data-animate="fade-up">
+              <div class="skill-group__header">
+                <span class="skill-group__icon" aria-hidden="true">💻</span>
+                <h3 class="skill-group__title">Web Development</h3>
+              </div>
+              <div class="skill-group__items">
+                <div class="skill-item">
+                  <div class="skill-item__icon html-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg>
+                  </div>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon css-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/></svg>
+                  </div>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon js-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                  </div>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon git-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.658 2.66c.645-.223 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                  </div>
+                  <span>Git</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon github-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                  </div>
+                  <span>GitHub</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX & Design -->
+            <div class="skill-group" data-animate="fade-up">
+              <div class="skill-group__header">
+                <span class="skill-group__icon" aria-hidden="true">🎨</span>
+                <h3 class="skill-group__title">UI/UX &amp; Design</h3>
+              </div>
+              <div class="skill-group__items">
+                <div class="skill-item">
+                  <div class="skill-item__icon design-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                  </div>
+                  <span>UI/UX Design</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon figma-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117zm-6.849.471h4.588V0H5.886c-2.476 0-4.49 2.014-4.49 4.49s2.014 4.491 4.49 4.491zm1.471-7.51h-1.47C4.556 .471 3.2 1.826 3.2 3.49c0 1.665 1.356 3.019 3.019 3.019h1.47V.471zM8.357 8.981H3.886A3.019 3.019 0 0 0 .867 12c0 1.665 1.356 3.019 3.019 3.019h4.471V8.981zm0 6.038H3.886A3.019 3.019 0 0 0 .867 18.057c0 1.665 1.356 3.019 3.019 3.019a3.019 3.019 0 0 0 3.019-3.019v-3.038zm4.471-5.038v-1h-4.471v1h4.471zm0 0"/></svg>
+                  </div>
+                  <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon graphic-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275Z"/></svg>
+                  </div>
+                  <span>Graphic Design</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon canva-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.293 16.584a6.635 6.635 0 0 1-4.053 1.367c-3.476 0-5.957-2.467-5.957-5.951 0-3.568 2.537-6.084 6.13-6.084 1.957 0 3.471.625 4.308 1.764.44.593.614 1.214.518 1.739-.14.757-.805 1.283-1.617 1.283-.441 0-.818-.123-1.285-.435-.546-.363-.958-.549-1.474-.549-1.175 0-2.009.933-2.009 2.215 0 1.325.871 2.26 2.12 2.26.524 0 .938-.186 1.487-.655.444-.381.855-.573 1.291-.573.807 0 1.42.521 1.509 1.271.068.584-.217 1.276-.968 1.348z"/></svg>
+                  </div>
+                  <span>Canva</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- IT & Technical -->
+            <div class="skill-group" data-animate="fade-up">
+              <div class="skill-group__header">
+                <span class="skill-group__icon" aria-hidden="true">🛠️</span>
+                <h3 class="skill-group__title">IT &amp; Technical</h3>
+              </div>
+              <div class="skill-group__items">
+                <div class="skill-item">
+                  <div class="skill-item__icon it-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+                  </div>
+                  <span>IT Support</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon tech-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"/><line x1="8" x2="8.01" y1="16" y2="16"/><line x1="8" x2="8.01" y1="20" y2="20"/><line x1="12" x2="12.01" y1="18" y2="18"/><line x1="12" x2="12.01" y1="22" y2="22"/><line x1="16" x2="16.01" y1="16" y2="16"/><line x1="16" x2="16.01" y1="20" y2="20"/></svg>
+                  </div>
+                  <span>Technical Support</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon net-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><circle cx="12" cy="5" r="3"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/><line x1="12" y1="12" x2="7" y2="14"/><line x1="12" y1="12" x2="17" y2="14"/></svg>
+                  </div>
+                  <span>Networking Basic</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon trouble-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                  </div>
+                  <span>Troubleshooting</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skill-group" data-animate="fade-up">
+              <div class="skill-group__header">
+                <span class="skill-group__icon" aria-hidden="true">🤝</span>
+                <h3 class="skill-group__title">Soft Skills</h3>
+              </div>
+              <div class="skill-group__items">
+                <div class="skill-item">
+                  <div class="skill-item__icon soft-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  </div>
+                  <span>Teamwork</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon soft-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  </div>
+                  <span>Communication</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon soft-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  </div>
+                  <span>Time Management</span>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-item__icon soft-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                  </div>
+                  <span>Problem Solving</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           PROJECTS
+      ====================================================== -->
+      <section class="section section--alt" id="projects" aria-label="Proyek">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">What I've built</p>
+            <h2 class="section__title">My <span class="accent">Projects</span></h2>
+          </div>
+
+          <div class="projects__grid">
+
+            <!-- Project 1 -->
+            <article class="project-card" data-animate="fade-up">
+              <div class="project-card__thumb" aria-hidden="true">
+                <div class="project-card__thumb-bg project-thumb--webdev"></div>
+                <span class="project-card__category">Web Development</span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Expense Tracker Web App</h3>
+                <p class="project-card__desc">
+                  Aplikasi web untuk mencatat dan memantau pengeluaran berdasarkan kategori.
+                </p>
+                <div class="project-card__tags" aria-label="Teknologi yang digunakan">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                </div>
+                <a href="https://dedenmaulana25.github.io/CodingCamp-17August26-dedenmaulanaiskandar/" class="btn btn--sm btn--outline" aria-label="Lihat project Expense Tracker Web App" target="_blank" rel="noopener noreferrer">View Project</a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-animate="fade-up">
+              <div class="project-card__thumb" aria-hidden="true">
+                <div class="project-card__thumb-bg project-thumb--iot"></div>
+                <span class="project-card__category">Research / IoT</span>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Energy Management System</h3>
+                <p class="project-card__desc">
+                  Sistem manajemen energi menggunakan pendekatan Deep Q-Network untuk membantu pengambilan keputusan penggunaan energi.
+                </p>
+                <div class="project-card__tags" aria-label="Teknologi yang digunakan">
+                  <span class="tag">Python</span>
+                  <span class="tag">Raspberry Pi</span>
+                  <span class="tag">Deep Q-Network</span>
+                </div>
+                <a href="projects/energy-management.html" class="btn btn--sm btn--outline" aria-label="Lihat project Energy Management System">View Project</a>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           EXPERIENCE
+      ====================================================== -->
+      <section class="section" id="experience" aria-label="Pengalaman">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">My journey</p>
+            <h2 class="section__title">Experience &amp; <span class="accent">Activities</span></h2>
+          </div>
+
+          <div class="timeline" role="list">
+
+            <!-- 1. Technical Support (KP) — 2025 -->
+            <div class="timeline__item" data-animate="fade-right" role="listitem">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__category">Kerja Praktik</span>
+                  <span class="timeline__period">2025</span>
+                </div>
+                <h3 class="timeline__title">Technical Support (KP)</h3>
+                <p class="timeline__org">UPT Puskesmas Ciampea</p>
+                <div class="timeline__desc">
+                  <ul>
+                    <li>Membantu menangani kebutuhan teknis dan troubleshooting perangkat komputer di lingkungan kerja.</li>
+                    <li>Membantu memastikan perangkat dan sistem pendukung operasional dapat digunakan dengan baik.</li>
+                    <li>Berkoordinasi dengan staf dalam menangani kendala teknis dan kebutuhan IT.</li>
+                  </ul>
+                </div>
+                <div class="timeline__tags">
+                  <span class="tag">IT Support</span>
+                  <span class="tag">Troubleshooting</span>
+                  <span class="tag">Technical Support</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Kasir Toko — 2024–2025 -->
+            <div class="timeline__item" data-animate="fade-right" role="listitem">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__category">Pekerjaan</span>
+                  <span class="timeline__period">2024 – 2025</span>
+                </div>
+                <h3 class="timeline__title">Kasir</h3>
+                <p class="timeline__org">PT. Amtazla Syahla Bersama</p>
+                <div class="timeline__desc">
+                  <ul>
+                    <li>Melayani pelanggan dan menangani proses transaksi dengan teliti dan ramah.</li>
+                    <li>Melakukan pencatatan transaksi serta membantu pengelolaan data barang masuk dan keluar.</li>
+                    <li>Membantu kegiatan operasional toko dan menjaga kualitas pelayanan.</li>
+                  </ul>
+                </div>
+                <div class="timeline__tags">
+                  <span class="tag">Customer Service</span>
+                  <span class="tag">Data Entry</span>
+                  <span class="tag">Operations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Kasir — 2020–2021 -->
+            <div class="timeline__item" data-animate="fade-right" role="listitem">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__category">Pekerjaan</span>
+                  <span class="timeline__period">2020 – 2021</span>
+                </div>
+                <h3 class="timeline__title">Kasir</h3>
+                <p class="timeline__org">Pasta Panggang</p>
+                <div class="timeline__desc">
+                  <ul>
+                    <li>Melayani pelanggan dan menangani proses pembayaran serta transaksi harian.</li>
+                    <li>Melakukan pencatatan penjualan dan memastikan transaksi dilakukan dengan akurat.</li>
+                    <li>Bekerja sama dengan tim untuk menjaga kelancaran operasional dan pelayanan.</li>
+                  </ul>
+                </div>
+                <div class="timeline__tags">
+                  <span class="tag">Customer Service</span>
+                  <span class="tag">Teamwork</span>
+                  <span class="tag">Accuracy</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Administrasi Kontrak (PKL) — 2017 -->
+            <div class="timeline__item" data-animate="fade-right" role="listitem">
+              <div class="timeline__dot" aria-hidden="true"></div>
+              <div class="timeline__card">
+                <div class="timeline__meta">
+                  <span class="timeline__category">Praktik Kerja Lapangan</span>
+                  <span class="timeline__period">2017</span>
+                </div>
+                <h3 class="timeline__title">Administrasi Kontrak (PKL)</h3>
+                <p class="timeline__org">Perusahaan Umum Daerah (PERUMDA) Tirta Pakuan Kota Bogor</p>
+                <div class="timeline__desc">
+                  <ul>
+                    <li>Membantu proses administrasi dan pengelolaan data kontrak.</li>
+                    <li>Membantu menyiapkan serta mengelola dokumen administrasi.</li>
+                    <li>Bekerja sama dengan tim dalam menyelesaikan kebutuhan administrasi.</li>
+                  </ul>
+                </div>
+                <div class="timeline__tags">
+                  <span class="tag">Administration</span>
+                  <span class="tag">Document Management</span>
+                  <span class="tag">Teamwork</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           CERTIFICATES
+      ====================================================== -->
+      <section class="section section--alt" id="certificates" aria-label="Sertifikat dan pencapaian">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">My credentials</p>
+            <h2 class="section__title">Certificates &amp; <span class="accent">Achievements</span></h2>
+          </div>
+
+          <div class="certs__grid">
+
+            <!-- 1. Certificate of Presenter -->
+            <div class="cert-card cert-card--highlight" data-animate="fade-up">
+              <div class="cert-card__preview" aria-hidden="true">
+                <img
+                  src="assets/certificates/presenter.png"
+                  alt="Certificate of Presenter"
+                  class="cert-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-card__body">
+                <span class="cert-card__type">Seminar / Academic</span>
+                <h3 class="cert-card__title">Certificate of Presenter</h3>
+                <p class="cert-card__desc">Sertifikat sebagai presenter pada seminar.</p>
+                <button
+                  class="btn btn--sm btn--primary cert-view-btn"
+                  data-cert-src="assets/certificates/presenter.png"
+                  data-cert-title="Certificate of Presenter"
+                  aria-label="Lihat Certificate of Presenter"
+                >
+                  View Certificate
+                </button>
+              </div>
+            </div>
+
+            <!-- 2. TOEFL Certificate -->
+            <div class="cert-card" data-animate="fade-up">
+              <div class="cert-card__preview" aria-hidden="true">
+                <img
+                  src="assets/certificates/toefl.png"
+                  alt="TOEFL Certificate"
+                  class="cert-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-card__body">
+                <span class="cert-card__type">Language</span>
+                <h3 class="cert-card__title">TOEFL Certificate</h3>
+                <p class="cert-card__desc">Sertifikat TOEFL sebagai bukti kemampuan bahasa Inggris.</p>
+                <button
+                  class="btn btn--sm btn--primary cert-view-btn"
+                  data-cert-src="assets/certificates/toefl.png"
+                  data-cert-title="TOEFL Certificate"
+                  aria-label="Lihat TOEFL Certificate"
+                >
+                  View Certificate
+                </button>
+              </div>
+            </div>
+
+            <!-- 3. Bootcamp Certificate 1 -->
+            <div class="cert-card" data-animate="fade-up">
+              <div class="cert-card__preview" aria-hidden="true">
+                <img
+                  src="assets/certificates/bootcamp-1.jpg"
+                  alt="Bootcamp Certificate 1"
+                  class="cert-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-card__body">
+                <span class="cert-card__type">Training / Bootcamp</span>
+                <h3 class="cert-card__title">Bootcamp Certificate 1</h3>
+                <p class="cert-card__desc">Sertifikat penyelesaian pelatihan atau bootcamp.</p>
+                <button
+                  class="btn btn--sm btn--primary cert-view-btn"
+                  data-cert-src="assets/certificates/bootcamp-1.jpg"
+                  data-cert-title="Bootcamp Certificate 1"
+                  aria-label="Lihat Bootcamp Certificate 1"
+                >
+                  View Certificate
+                </button>
+              </div>
+            </div>
+
+            <!-- 4. Bootcamp Certificate 2 -->
+            <div class="cert-card" data-animate="fade-up">
+              <div class="cert-card__preview" aria-hidden="true">
+                <img
+                  src="assets/certificates/bootcamp-2.jpg"
+                  alt="Bootcamp Certificate 2"
+                  class="cert-card__img"
+                  loading="lazy"
+                />
+              </div>
+              <div class="cert-card__body">
+                <span class="cert-card__type">Training / Bootcamp</span>
+                <h3 class="cert-card__title">Bootcamp Certificate 2</h3>
+                <p class="cert-card__desc">Sertifikat penyelesaian pelatihan atau bootcamp.</p>
+                <button
+                  class="btn btn--sm btn--primary cert-view-btn"
+                  data-cert-src="assets/certificates/bootcamp-2.jpg"
+                  data-cert-title="Bootcamp Certificate 2"
+                  aria-label="Lihat Bootcamp Certificate 2"
+                >
+                  View Certificate
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+           CONTACT
+      ====================================================== -->
+      <section class="section" id="contact" aria-label="Kontak">
+        <div class="container">
+          <div class="section__header" data-animate="fade-up">
+            <p class="section__label">Let's connect</p>
+            <h2 class="section__title">Get In <span class="accent">Touch</span></h2>
+          </div>
+
+          <div class="contact__grid">
+
+            <!-- Contact info -->
+            <div class="contact__info" data-animate="fade-right">
+              <p class="contact__intro">
+                Saya terbuka untuk peluang kerja, kolaborasi, atau sekadar berdiskusi soal
+                teknologi. Jangan ragu untuk menghubungi saya!
+              </p>
+
+              <div class="contact__channels">
+                <a href="mailto:your.email@example.com" class="contact-item" aria-label="Kirim email ke Deden Maulana">
+                  <div class="contact-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </div>
+                  <div class="contact-item__text">
+                    <span class="contact-item__label">Email</span>
+                    <span class="contact-item__value">maulanadeden025gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="#" class="contact-item" aria-label="Kunjungi profil LinkedIn Deden Maulana" rel="noopener noreferrer">
+                  <div class="contact-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                  </div>
+                  <div class="contact-item__text">
+                    <span class="contact-item__label">LinkedIn</span>
+                    <span class="contact-item__value">www.linkedin.com/in/deden-maulana-iskandar-378957384</span>
+                  </div>
+                </a>
+
+                <a href="#" class="contact-item" aria-label="Kunjungi profil GitHub Deden Maulana" rel="noopener noreferrer">
+                  <div class="contact-item__icon" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                  </div>
+                  <div class="contact-item__text">
+                    <span class="contact-item__label">GitHub</span>
+                    <span class="contact-item__value">https://github.com/Dedenmaulana25</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Contact form -->
+            <form class="contact__form" id="contactForm" novalidate data-animate="fade-left" aria-label="Form kirim pesan">
+              <div class="form-group">
+                <label for="contactName" class="form-label">Name <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="contactName"
+                  name="name"
+                  class="form-input"
+                  placeholder="Nama lengkap Anda"
+                  autocomplete="name"
+                  required
+                  aria-required="true"
+                />
+                <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email <span class="required" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  name="email"
+                  class="form-input"
+                  placeholder="email@example.com"
+                  autocomplete="email"
+                  required
+                  aria-required="true"
+                />
+                <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message <span class="required" aria-hidden="true">*</span></label>
+                <textarea
+                  id="contactMessage"
+                  name="message"
+                  class="form-input form-textarea"
+                  placeholder="Tulis pesan Anda di sini..."
+                  rows="5"
+                  required
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+
+              <div class="form-success" id="formSuccess" role="status" aria-live="polite" aria-atomic="true" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Pesan berhasil dikirim! Saya akan segera membalas.</span>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer class="footer" aria-label="Footer">
+      <div class="container footer__inner">
+        <div class="footer__top">
+          <a href="#home" class="footer__logo" aria-label="Deden Maulana — kembali ke atas">
+            Deden<span class="accent">.</span>
+          </a>
+          <nav class="footer__nav" aria-label="Footer navigation">
+            <a href="#about"        class="footer__nav-link">About</a>
+            <a href="#skills"       class="footer__nav-link">Skills</a>
+            <a href="#projects"     class="footer__nav-link">Projects</a>
+            <a href="#contact"      class="footer__nav-link">Contact</a>
+          </nav>
+          <div class="footer__socials">
+            <a href="mailto:maulanadeden025gmail.com" class="footer__social" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/deden-maulana-iskandar-378957384/" class="footer__social" aria-label="LinkedIn" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/Dedenmaulana25" class="footer__social" aria-label="GitHub" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copy">&copy; 2026 Deden Maulana Iskandar. All Rights Reserved.</p>
+          <p class="footer__built">Built with <span class="accent">♥</span> using HTML, CSS &amp; JS</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas" hidden>
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- =====================================================
+         CERTIFICATE MODAL
+    ====================================================== -->
+    <div
+      class="cert-modal"
+      id="certModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="certModalTitle"
+      hidden
+    >
+      <div class="cert-modal__overlay" id="certModalOverlay" aria-hidden="true"></div>
+      <div class="cert-modal__box">
+        <div class="cert-modal__header">
+          <h2 class="cert-modal__title" id="certModalTitle"></h2>
+          <button class="cert-modal__close" id="certModalClose" aria-label="Tutup modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+        <div class="cert-modal__img-wrap">
+          <img
+            class="cert-modal__img"
+            id="certModalImg"
+            src=""
+            alt=""
+          />
+        </div>
+        <div class="cert-modal__footer">
+          <a
+            class="btn btn--outline btn--sm"
+            id="certModalFullSize"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Buka sertifikat ukuran penuh di tab baru"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/>
+              <line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            View Full Size
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1890,3 +1890,108 @@ strong { color: var(--clr-white); font-weight: var(--fw-semi); }
     animation: none;
   }
 }
+
+
+/* ─── EDUCATION ─────────────────────────────────────────────── */
+.edu__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-6);
+  max-width: 860px;
+  margin-inline: auto;
+}
+
+.edu-card {
+  display: flex;
+  gap: var(--sp-5);
+  align-items: flex-start;
+  padding: var(--sp-6) var(--sp-8);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-radius: var(--r-xl);
+  transition: border-color var(--t-normal), box-shadow var(--t-normal), transform var(--t-normal);
+}
+
+.edu-card:hover {
+  border-color: var(--clr-border-2);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-3px);
+}
+
+.edu-card__icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.edu-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.edu-card__level {
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-bold);
+  color: var(--clr-blue);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.edu-card__badge {
+  padding: 2px var(--sp-3);
+  background: rgba(79, 142, 247, .12);
+  border: 1px solid rgba(79, 142, 247, .3);
+  border-radius: var(--r-full);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  color: var(--clr-blue);
+  letter-spacing: .04em;
+}
+
+.edu-card__institution {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+  margin-bottom: var(--sp-1);
+  line-height: var(--lh-snug);
+}
+
+.edu-card__institution:empty::before {
+  content: 'Nama institusi akan diperbarui';
+  opacity: .4;
+  font-style: italic;
+  font-weight: var(--fw-regular);
+}
+
+.edu-card__major {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-medium);
+  color: var(--clr-purple);
+  margin-bottom: var(--sp-2);
+}
+
+.edu-card__period {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+  font-style: italic;
+}
+
+.edu-card__period:empty::before {
+  content: 'Periode akan diperbarui';
+  opacity: .4;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .edu__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-card {
+    padding: var(--sp-5) var(--sp-6);
+  }
+}

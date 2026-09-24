@@ -439,3 +439,62 @@ const qsa = (sel, ctx = document) => [...ctx.querySelectorAll(sel)];
     }
   });
 }());
+
+
+/* ============================================================
+   11. THEME TOGGLE — Light Mode / Dark Mode
+   ============================================================ */
+(function initThemeToggle() {
+  const btn  = qs('#themeToggle');
+  const body = document.body;
+  if (!btn) return;
+
+  const STORAGE_KEY = 'portfolio-theme';
+  const LIGHT_CLASS = 'light-mode';
+
+  /* ── Apply saved theme before first paint ──────────────── */
+  // Runs synchronously so there is no flash of wrong theme.
+  // body.no-transition suppresses CSS transitions during init.
+  body.classList.add('no-transition');
+
+  const saved = localStorage.getItem(STORAGE_KEY);
+  if (saved === 'light') {
+    body.classList.add(LIGHT_CLASS);
+    btn.setAttribute('aria-label', 'Aktifkan Dark Mode');
+  } else {
+    // Default: dark mode (no class needed)
+    btn.setAttribute('aria-label', 'Aktifkan Light Mode');
+  }
+
+  // Re-enable transitions after the first frame
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      body.classList.remove('no-transition');
+    });
+  });
+
+  /* ── Toggle ─────────────────────────────────────────────── */
+  function toggle() {
+    const isLight = body.classList.toggle(LIGHT_CLASS);
+    if (isLight) {
+      localStorage.setItem(STORAGE_KEY, 'light');
+      btn.setAttribute('aria-label', 'Aktifkan Dark Mode');
+    } else {
+      localStorage.setItem(STORAGE_KEY, 'dark');
+      btn.setAttribute('aria-label', 'Aktifkan Light Mode');
+    }
+  }
+
+  btn.addEventListener('click', toggle);
+
+  /* ── Optional: sync with OS preference on first visit ───── */
+  // Only applies when user has never set a preference yet.
+  if (!saved) {
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    // OS prefers light → switch to light automatically
+    if (!prefersDark.matches) {
+      body.classList.add(LIGHT_CLASS);
+      btn.setAttribute('aria-label', 'Aktifkan Dark Mode');
+    }
+  }
+}());

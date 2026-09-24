@@ -1995,3 +1995,177 @@ strong { color: var(--clr-white); font-weight: var(--fw-semi); }
     padding: var(--sp-5) var(--sp-6);
   }
 }
+
+
+/* ============================================================
+   THEME TOGGLE — Light Mode / Dark Mode
+   ============================================================ */
+
+/* ─── Theme toggle button ───────────────────────────────────── */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-full);
+  border: 1.5px solid var(--clr-border-2);
+  color: var(--clr-text-muted);
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color var(--t-fast), color var(--t-fast),
+              background var(--t-fast), transform var(--t-fast);
+}
+
+.theme-toggle:hover,
+.theme-toggle:focus-visible {
+  border-color: var(--clr-blue);
+  color: var(--clr-blue);
+  background: rgba(79, 142, 247, .08);
+  transform: rotate(15deg);
+}
+
+/* Dark mode (default): show moon, hide sun */
+.theme-toggle__icon--sun  { display: none; }
+.theme-toggle__icon--moon { display: block; }
+
+/* Light mode: show sun, hide moon */
+body.light-mode .theme-toggle__icon--sun  { display: block; }
+body.light-mode .theme-toggle__icon--moon { display: none; }
+
+/* Navbar inner — make room for the extra button */
+.navbar__inner {
+  gap: var(--sp-3);
+}
+
+/* ─── Light Mode color overrides ───────────────────────────── */
+body.light-mode {
+  /* Backgrounds */
+  --clr-bg:         #f0f4f8;
+  --clr-bg-alt:     #e4eaf2;
+  --clr-surface:    #ffffff;
+  --clr-surface-2:  #edf1f7;
+
+  /* Borders */
+  --clr-border:     #d0d9e8;
+  --clr-border-2:   #b8c5d9;
+
+  /* Text */
+  --clr-text:       #1e2d45;
+  --clr-text-muted: #5a6b82;
+  --clr-text-dim:   #8a9ab0;
+  --clr-white:      #0d1526;
+
+  /* Accent — tetap sama agar identitas tidak berubah */
+  --clr-blue:       #2d74e8;
+  --clr-purple:     #6355e0;
+  --clr-gradient:   linear-gradient(135deg, #2d74e8 0%, #6355e0 100%);
+
+  /* Shadows — lebih subtle di light mode */
+  --shadow-sm:   0 2px 8px  rgba(30, 45, 69, .10);
+  --shadow-md:   0 6px 24px rgba(30, 45, 69, .12);
+  --shadow-lg:   0 12px 40px rgba(30, 45, 69, .15);
+  --shadow-blue: 0 0 24px rgba(45, 116, 232, .18);
+  --shadow-card: 0 4px 20px rgba(30, 45, 69, .10);
+}
+
+/* ─── Light mode component-level fixes ─────────────────────── */
+
+/* Navbar scrolled */
+body.light-mode .navbar.scrolled {
+  background: rgba(240, 244, 248, .92);
+  box-shadow: 0 1px 0 var(--clr-border);
+}
+
+/* Hero blobs — lebih terang di light mode */
+body.light-mode .hero::before {
+  background: radial-gradient(circle, rgba(45, 116, 232, .10) 0%, transparent 68%);
+}
+body.light-mode .hero::after {
+  background: radial-gradient(circle, rgba(99, 85, 224, .08) 0%, transparent 68%);
+}
+
+/* Hero avatar */
+body.light-mode .hero__avatar-inner {
+  background: var(--clr-surface-2);
+  border-color: var(--clr-border-2);
+}
+body.light-mode .hero__avatar-ring {
+  opacity: .15;
+}
+
+/* Floating badges */
+body.light-mode .hero__badge {
+  background: var(--clr-surface);
+  border-color: var(--clr-border-2);
+  box-shadow: var(--shadow-md);
+}
+
+/* Scroll hint */
+body.light-mode .hero__scroll-hint {
+  border-color: var(--clr-border-2);
+}
+
+/* Bars (hamburger) */
+body.light-mode .bar {
+  background: var(--clr-text);
+}
+
+/* Mobile nav overlay */
+body.light-mode .navbar__menu {
+  background: rgba(240, 244, 248, .97);
+}
+
+/* Section alt background applies via variable, no extra rule needed */
+
+/* Cards — border & bg apply via variables */
+
+/* Timeline dot */
+body.light-mode .timeline::before {
+  background: linear-gradient(to bottom, var(--clr-blue), var(--clr-purple));
+}
+
+/* Cert modal overlay */
+body.light-mode .cert-modal__overlay {
+  background: rgba(14, 22, 40, .72);
+}
+body.light-mode .cert-modal__box {
+  background: var(--clr-surface);
+  border-color: var(--clr-border-2);
+}
+body.light-mode .cert-modal__img-wrap {
+  background: var(--clr-surface-2);
+}
+
+/* Back-to-top */
+body.light-mode .back-to-top {
+  box-shadow: var(--shadow-md);
+}
+
+/* Form inputs */
+body.light-mode .form-input {
+  background: var(--clr-surface-2);
+  border-color: var(--clr-border);
+  color: var(--clr-white);
+}
+body.light-mode .form-input::placeholder {
+  color: var(--clr-text-dim);
+}
+
+/* Footer */
+body.light-mode .footer {
+  background: var(--clr-surface);
+  border-top-color: var(--clr-border);
+}
+
+/* ─── Smooth theme transition ───────────────────────────────── */
+body {
+  transition: background-color var(--t-normal), color var(--t-normal);
+}
+
+/* Prevent transition flash on page load */
+body.no-transition,
+body.no-transition * {
+  transition: none !important;
+}
